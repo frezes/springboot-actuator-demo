@@ -1,7 +1,7 @@
 
 # springboot-actuator-demo
 
-本项目是Spring Boot Actuator 的Demo项目，用于演示服务在Kubernetes 上对指标收集和监控、存活探针、就绪等功能；
+本项目是Spring Boot Actuator 的Demo项目，用于演示Java服务在Kubernetes 上对指标收集和监控、存活探针、就绪服务等功能；
 
 ### Build
 
