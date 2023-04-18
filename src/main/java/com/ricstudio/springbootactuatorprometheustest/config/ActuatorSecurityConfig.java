@@ -48,6 +48,7 @@ public class ActuatorSecurityConfig extends WebSecurityConfigurerAdapter {
 //                .httpBasic();
 
         // version2
+        /*
         http
                 .authorizeRequests()
                 .requestMatchers(EndpointRequest.toAnyEndpoint())
@@ -60,5 +61,7 @@ public class ActuatorSecurityConfig extends WebSecurityConfigurerAdapter {
                     .authenticated()
                 .and()
                 .httpBasic();
+    }
+         */
     }
 }

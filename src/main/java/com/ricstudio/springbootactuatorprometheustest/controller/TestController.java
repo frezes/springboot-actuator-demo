@@ -20,12 +20,12 @@ public class TestController {
     @Resource
     private PrometheusCustomMonitor monitor;
 
-    @GetMapping("/hello")
+    @GetMapping("/test/hello")
     public String hello() {
         return "hello, world";
     }
 
-    @GetMapping("/slow")
+    @GetMapping("/test/slow")
     public String slow() throws InterruptedException {
         Random random = new Random();
         int delay = random.nextInt(10);
@@ -33,7 +33,7 @@ public class TestController {
         return "sleep time: " + delay;
     }
 
-    @RequestMapping("/order")
+    @RequestMapping("/test/order")
     public String order(@RequestParam(defaultValue = "0") String flag) throws Exception {
         monitor.getOrderCount().increment();
         if ("1".equals(flag)) {
