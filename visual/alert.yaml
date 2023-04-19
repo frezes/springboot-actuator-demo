@@ -1,0 +1,1 @@
+expr: delta(order_amount_sum_count{namespace="springboot-demo"}[5m]) > 10
