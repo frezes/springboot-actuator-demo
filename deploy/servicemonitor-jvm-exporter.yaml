@@ -1,0 +1,16 @@
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: springboot-actuator-jvm-exporter
+  namespace: springboot-demo
+spec:
+  selector:
+    matchLabels:
+      app: springboot-actuator-demo
+  namespaceSelector:
+    matchNames:
+    - springboot-demo
+  endpoints:
+  - port: metrics
+    interval: 30s
+    path: /metrics
